@@ -1,0 +1,187 @@
+/* 
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
+color:#2c0c05 dark red/brown
+color:#ece9f8; light blue
+color: #db6cbf; light pink
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #2c0c05;
+    margin: 0;
+    text-align: center;
+}
+
+/* ==============
+    typography 
+   ============== */
+
+h1 {
+    font-size: 3.75rem;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ece9f8;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+h1+p {
+    color: #db6cbf;
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+h2+p {
+    color: #800461;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.top-text {
+    
+    color: #db6cbf;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+    margin-top: 1em;
+    
+}
+
+.fine-text {
+    font-size: .75rem;
+    letter-spacing: 1px;
+    margin-top: 3em;
+}
+.main-details{
+    letter-spacing: 1px;
+}
+
+/* ==============
+    intro section
+   ============== */
+
+.intro {
+    background-image: url(../images/fancy-cushion.png);
+    background-color: rgb(43, 9, 9);
+    background-blend-mode: screen;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* =================
+   main-content section 
+   ================= */
+
+.main-content {
+    padding: 2em 1em;
+}
+
+.intro>*, .main-content>* {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =================
+        form
+   ================= */
+
+.register-form {
+    margin-top: 2em;
+    width: 80%;
+    max-width: 300px;
+}
+
+input, .btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    text-align: inherit;
+    font-family: inherit;
+    padding: .5em;
+    margin-bottom: 1em;
+    border: 1px solid #2c0c05;
+    font-size: 1rem;
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+.btn {
+    padding: .5em;
+    border: .5px solid gray;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ece9f8;
+    font-size: 1rem;
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+.btn-primary {
+    background-image: url(../images/fancy-cushion.png);
+    background-color: rgb(43, 9, 9);
+    background-blend-mode: screen;
+}
+
+.btn:hover,
+.btn:focus,
+input:focus{
+    transform: scale(1.15);
+}
+
+/* =================
+        media query
+   ================= */
+
+@media (min-width:600px) {
+    .body-container{
+       display: flex;
+       height: 100vh;
+    }
+    
+    .main-content {
+        margin: auto;
+        width: 50%;
+    }
+    .intro {
+        width: 50%;
+    }
+}
+
+@media (min-width:1000px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .intro *{
+        max-width: 600px;
+    }
+    .main-content{
+        transform: scale(1.3);
+    }
+}
