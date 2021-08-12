@@ -163,8 +163,17 @@ input:focus{
     .body-container{
        display: flex;
        height: 100vh;
+       font-size: 1.125rem;
     }
     
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
     .main-content,
     .intro {
         margin: auto;
